@@ -1,4 +1,4 @@
-﻿using System;
+﻿using SwitchCase_State.Client;
 
 namespace SwitchCase_State
 {
@@ -6,15 +6,7 @@ namespace SwitchCase_State
     {
         static void Main(string[] args)
         {
-            int sense = 1;
-            new ConditionSense().Switch(sense);
-
-            Console.WriteLine("then");
-
-            string greeting = "Bye";
-            new ConditionSpeech().Switch(greeting, "see you then.");
-
-            Console.ReadKey();
+            App.Run();
         }
     }
 }

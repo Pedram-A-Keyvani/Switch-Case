@@ -43,25 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaseBye.cs" />
-    <Compile Include="CaseHi.cs" />
-    <Compile Include="SpeechHolder.cs" />
-    <Compile Include="SenseHolder.cs" />
-    <Compile Include="ConditionSpeech.cs" />
-    <Compile Include="Greeting.cs" />
-    <Compile Include="Sense.cs" />
-    <Compile Include="CaseNoSense.cs" />
-    <Compile Include="SwitchCase.cs" />
-    <Compile Include="ICase.cs" />
-    <Compile Include="ConditionSense.cs" />
+    <Compile Include="Client\App.cs" />
+    <Compile Include="Server\GreetingCondition\Cases\CaseBye.cs" />
+    <Compile Include="Server\GreetingCondition\Cases\CaseHi.cs" />
+    <Compile Include="Server\ConditionActions\IAction.cs" />
+    <Compile Include="Server\GreetingCondition\IGreeting.cs" />
+    <Compile Include="Server\ConditionActions\ISpeech.cs" />
+    <Compile Include="Server\SenseCondition\ISense.cs" />
+    <Compile Include="Server\GreetingCondition\ConditionGreeting.cs" />
+    <Compile Include="Server\GreetingCondition\Greeting.cs" />
+    <Compile Include="Server\SenseCondition\Sense.cs" />
+    <Compile Include="Server\SenseCondition\Cases\CaseNoSense.cs" />
+    <Compile Include="Server\SwitchCase.cs" />
+    <Compile Include="Server\ICase.cs" />
+    <Compile Include="Server\SenseCondition\ConditionSense.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CaseSmile.cs" />
-    <Compile Include="CaseCry.cs" />
+    <Compile Include="Server\SenseCondition\Cases\CaseSmile.cs" />
+    <Compile Include="Server\SenseCondition\Cases\CaseCry.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

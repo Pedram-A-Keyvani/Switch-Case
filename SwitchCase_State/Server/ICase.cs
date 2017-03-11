@@ -1,4 +1,4 @@
-﻿namespace SwitchCase_State
+﻿namespace SwitchCase_State.Server
 {
     public interface ICase<TCase>
     {
