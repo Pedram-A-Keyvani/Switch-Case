@@ -2,13 +2,14 @@
 
 namespace SwitchCase_State.Server.GreetingCondition.Cases
 {
-    public class CaseHi : ISpeech<IGreeting>, ICase<string>
+    public class CaseHi : ISpeech, ICase<string>
     {
         public string Key { get { return "Hi"; } }
 
-        public void Say(string message, IGreeting greeting)
+        public void Say(string message)
         {
-            greeting.SayHiThen(message);
+            Greeting.Hi hi = new Greeting.Hi();
+            hi.SayHiThen(message);
         }
     }
 }

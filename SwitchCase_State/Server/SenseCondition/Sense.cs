@@ -1,22 +1,32 @@
-﻿using System;
+﻿using SwitchCase_State.Server.ConditionActions;
+using System;
 
 namespace SwitchCase_State.Server.SenseCondition
 {
-    public class Sense : ISense
+    public class Sense
     {
-        public void Smile()
+        public class Smile
         {
-            Console.WriteLine("I'm smiling :-)");
+            public void Act()
+            {
+                Console.WriteLine("I'm smiling :-)");
+            }
         }
 
-        public void Cry()
+        public class Cry
         {
-            Console.WriteLine("I'm crying :-(");
+            public void Act()
+            {
+                Console.WriteLine("I'm crying :-(");
+            }
         }
 
-        public void NoSense()
+        public class NoSense
         {
-            Console.WriteLine("I've no scence :-|");
+            public void Act()
+            {
+                Console.WriteLine("I've no scence :-|");
+            }
         }
     }
 }

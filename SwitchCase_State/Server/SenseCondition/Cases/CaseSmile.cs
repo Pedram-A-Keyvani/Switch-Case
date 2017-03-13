@@ -7,9 +7,10 @@ namespace SwitchCase_State.Server.SenseCondition.Cases
         public int? Key { get { return 1; } }
 
 
-        public void Sense(ISense sense)
+        public void Do()
         {
-            sense.Smile();
+            Sense.Smile smile = new Sense.Smile();
+            smile.Act();
         }
     }
 }

@@ -2,16 +2,22 @@
 
 namespace SwitchCase_State.Server.GreetingCondition
 {
-    public class Greeting : IGreeting
+    public class Greeting
     {
-        public void SayHiThen(string message)
+        public class Hi
         {
-            Console.WriteLine($"Hi, {message}");
+            public void SayHiThen(string message)
+            {
+                Console.WriteLine($"Hi, {message}");
+            }
         }
 
-        public void SayByeThen(string message)
+        public class Bye
         {
-            Console.WriteLine($"Bye, {message}");
+            public void SayByeThen(string message)
+            {
+                Console.WriteLine($"Bye, {message}");
+            }
         }
     }
 }

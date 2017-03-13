@@ -18,12 +18,10 @@ namespace SwitchCase_State.Server.GreetingCondition
 
         public virtual void Switch(string key, string message)
         {
-            IGreeting greeting = new Greeting();
-
-            IEnumerable<ISpeech<IGreeting>> matches = Cases.Where(p => p.Key.Equals(key)).Select(p => p as ISpeech<IGreeting>);
+            IEnumerable<ISpeech> matches = Cases.Where(p => p.Key.Equals(key)).Select(p => p as ISpeech);
             if (matches.Count() > 0)
-                foreach (ISpeech<IGreeting> match in matches)
-                    match.Say(message, greeting);
+                foreach (ISpeech match in matches)
+                    match.Say(message);
         }
     }
 }

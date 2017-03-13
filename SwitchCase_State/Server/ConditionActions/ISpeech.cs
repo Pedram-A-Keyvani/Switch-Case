@@ -1,7 +1,7 @@
 ﻿namespace SwitchCase_State.Server.ConditionActions
 {
-    public interface ISpeech<TSpeech>
+    public interface ISpeech
     {
-        void Say(string message, TSpeech greeting);
+        void Say(string message);
     }
 }

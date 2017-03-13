@@ -47,9 +47,7 @@
     <Compile Include="Server\GreetingCondition\Cases\CaseBye.cs" />
     <Compile Include="Server\GreetingCondition\Cases\CaseHi.cs" />
     <Compile Include="Server\ConditionActions\IAction.cs" />
-    <Compile Include="Server\GreetingCondition\IGreeting.cs" />
     <Compile Include="Server\ConditionActions\ISpeech.cs" />
-    <Compile Include="Server\SenseCondition\ISense.cs" />
     <Compile Include="Server\GreetingCondition\ConditionGreeting.cs" />
     <Compile Include="Server\GreetingCondition\Greeting.cs" />
     <Compile Include="Server\SenseCondition\Sense.cs" />

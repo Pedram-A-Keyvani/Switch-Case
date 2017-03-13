@@ -6,9 +6,10 @@ namespace SwitchCase_State.Server.SenseCondition.Cases
     {
         public int? Key { get { return 2; } }
 
-        public void Sense(ISense sense)
+        public void Do()
         {
-            sense.Cry();
+            Sense.Cry cry = new Sense.Cry();
+            cry.Act();
         }
     }
 }
